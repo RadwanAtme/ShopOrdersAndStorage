@@ -61,11 +61,11 @@ fun MyApplication() {
         color = MaterialTheme.colorScheme.background
         ){
         Scaffold(
-            bottomBar = {
-                BottomNavigationBar(navController = navController)
-            },
             topBar = {
                 DynamicTopAppBar(navController = navController)
+            },
+            bottomBar = {
+                BottomNavigationBar(navController = navController)
             },
             content = { innerPadding ->
                 NavHostContainer(
